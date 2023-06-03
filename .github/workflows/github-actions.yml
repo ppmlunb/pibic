@@ -9,9 +9,9 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: doc/tex/ppml_pibic_propose.tex
+          root_file: doc/ppml_pibic_propose.tex
       - name: Upload PDF file
         uses: actions/upload-artifact@v3
         with:
           name: PDF
-          path: doc/pdf/ppml_pibic_propose.pdf
+          path: doc/ppml_pibic_propose.pdf
