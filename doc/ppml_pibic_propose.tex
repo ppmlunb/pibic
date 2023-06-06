@@ -1,7 +1,7 @@
 \documentclass{article}
 \usepackage{blindtext}
 \usepackage[a4paper, total={6in, 10in}]{geometry}
-
+\usepackage{cite}
 \usepackage{graphicx,color}
 \usepackage[portuguese]{babel}
 \usepackage[utf8]{inputenc}
@@ -14,7 +14,7 @@
 \title{Privacy Preserving Machine Learning: Estudo de Técnicas e Prova de Conceito}
 \author{Thaís Fernanda de Castro Garcia, 200043722}
 \author{Ualiton Ventura da Silva, 202033580}
-\author{Autor 3}
+\author{Maria Eduarda Carvalho Santos, 190092556}
 \affil{Universidade de Brasília}
 \date{Maio 2023}
 
@@ -25,7 +25,7 @@ A preservação da privacidade tem se tornado uma preocupação crescente na era
 \end{abstract}
 
 \section{Introdução}
-A preservação da privacidade tem se tornado uma preocupação cada vez mais relevante na sociedade atual. Com o advento da era da informação, a coleta e análise de dados pessoais se tornaram onipresentes em diversas áreas, como saúde, finanças e comércio eletrônico. No entanto, o uso desses dados sensíveis apresenta riscos consideráveis à privacidade dos indivíduos. Portanto, torna-se essencial desenvolver técnicas que possibilitem a análise de dados sem comprometer a privacidade das pessoas, dessa forma viabilizando um maior data set para treinar inteligências artificiais que necessitam de dados considerados sensíveis enquanto garantindo a privacidade deles.
+A preservação da privacidade tem se tornado uma preocupação cada vez mais relevante na sociedade atual. Com o advento da era da informação, a coleta e análise de dados pessoais se tornaram onipresentes em diversas áreas, como saúde, finanças e comércio eletrônico \cite{boulemtafes2020review}). No entanto, o uso desses dados sensíveis apresenta riscos consideráveis à privacidade dos indivíduos. Portanto, torna-se essencial desenvolver técnicas que possibilitem a análise de dados sem comprometer a privacidade das pessoas, dessa forma viabilizando um maior data set para treinar inteligências artificiais que necessitam de dados considerados sensíveis enquanto garantindo a privacidade deles \cite{chamikara2020efficient}.
 
 \section{Objetivos}
 O objetivo deste projeto de iniciação científica é estudar a área de Privacy Preserving Machine Learning (PPML), que se dedica a encontrar soluções para realizar aprendizado de máquina de forma segura e preservando a privacidade dos dados. Os principais objetivos deste projeto são:
@@ -40,7 +40,7 @@ O objetivo deste projeto de iniciação científica é estudar a área de Privac
 
 \section{Relevância Científica}
 
-Com o avanço da tecnologia e o crescente uso de dados pessoais, surge a necessidade de proteger a privacidade dos indivíduos e preservar a confidencialidade das informações sensíveis. O machine learning, por sua vez, tem sido amplamente utilizado para extrair insights valiosos desses dados. No entanto, muitas vezes, isso requer compartilhamento e processamento de dados sensíveis, o que pode comprometer a privacidade dos usuários. Nesse contexto, o desenvolvimento de técnicas e algoritmos que permitam o treinamento e a inferência de modelos de aprendizado de máquina sem expor dados pessoais é essencial. Portanto, um projeto de iniciação científica nessa área busca contribuir para a criação de soluções robustas e eficientes, permitindo que as organizações possam aproveitar os benefícios do machine learning sem violar a privacidade dos indivíduos.
+Com o avanço da tecnologia e o crescente uso de dados pessoais, surge a necessidade de proteger a privacidade dos indivíduos e preservar a confidencialidade das informações sensíveis. O machine learning, por sua vez, tem sido amplamente utilizado para extrair insights valiosos desses dados. No entanto, muitas vezes, isso requer compartilhamento e processamento de dados sensíveis, o que pode comprometer a privacidade dos usuários. Nesse contexto, o desenvolvimento de técnicas e algoritmos que permitam o treinamento e a inferência de modelos de aprendizado de máquina sem expor dados pessoais é essencial. Portanto, um projeto de iniciação científica nessa área busca contribuir para a criação de soluções robustas e eficientes, permitindo que as organizações possam aproveitar os benefícios do machine learning sem violar a privacidade dos indivíduos \cite{koti2021swift}.
 
 Além disso, a área de privacy preserving machine learning possui implicações científicas de amplo alcance. Ao desenvolver e aprimorar técnicas que permitem a proteção da privacidade durante o processo de treinamento e inferência de modelos, os pesquisadores estão contribuindo para o desenvolvimento de uma ciência de dados mais ética e responsável. Essas técnicas podem ser aplicadas em uma variedade de contextos, desde a análise de dados de saúde, onde a privacidade médica é fundamental, até a análise de dados financeiros e comerciais, onde a confidencialidade das informações é essencial. Além disso, a pesquisa em privacy preserving machine learning promove a confiança entre os usuários e as organizações que utilizam técnicas de aprendizado de máquina, ao garantir que os dados pessoais sejam tratados com segurança e respeito. Portanto, um projeto de iniciação científica nessa área contribui para o avanço da ciência de dados, ao mesmo tempo em que protege os direitos e a privacidade dos indivíduos.
 
@@ -52,6 +52,7 @@ A metodologia deste projeto envolverá as seguintes etapas:
 \item Seleção de técnicas: Analisar os algoritmos de PPML mais promissores e adequados para o contexto do projeto, levando em consideração os requisitos de privacidade, a eficiência computacional e a preservação da precisão dos modelos.
 \item Implementação da prova de conceito: Desenvolver um ambiente de experimentação que permita a aplicação das técnicas de PPML selecionadas. Utilizar um conjunto de dados de referência e realizar experimentos controlados para avaliar a privacidade, a precisão e o desempenho dos modelos gerados.
 \item Avaliação dos resultados: Analisar os resultados obtidos na prova de conceito, comparando a preservação da privacidade, a precisão dos modelos e o desempenho computacional alcançados pelas diferentes técnicas de PPML. Discutir os pontos fortes e limitações das abordagens utilizadas.
+
 \item Documentação e apresentação: Elaborar um relatório detalhado das atividades realizadas, incluindo a revisão bibliográfica, a metodologia adotada, os resultados obtidos e as conclusões alcançadas. Preparar uma apresentação para compartilhar os principais aspectos do projeto e promover a conscientização sobre a importância da privacidade preservada em machine learning.
 \end{enumerate}
 
@@ -61,8 +62,8 @@ Espera-se que este projeto de iniciação científica contribua para o avanço d
 \begin{itemize}
 \item Um conhecimento aprofundado das técnicas de PPML disponíveis na literatura, incluindo uma compreensão dos fundamentos teóricos e aplicações práticas dessas técnicas.
 \item Uma avaliação abrangente dos desafios e limitações associados ao uso de PPML, permitindo uma compreensão mais clara das restrições e considerações práticas ao implementar essas técnicas.
-\item A identificação dos algoritmos de PPML mais adequados para diferentes cenários de aplicação, levando em conta as características dos dados e os requisitos de privacidade específicos de cada contexto.
-\item A implementação de uma prova de conceito bem-sucedida usando um conjunto de dados de referência, com foco na versão PP do Energy-based Flow Classifier (EFC), para garantir a privacidade dos dados durante o processo de treinamento do modelo.
+\item A identificação dos algoritmos de PPML mais adequados para diferentes cenários de aplicação, levando em conta as características dos dados e os requisitos de privacidade específicos de cada contexto \cite{9194237}.
+\item A implementação de uma prova de conceito bem-sucedida usando um conjunto de dados de referência, com foco na versão PP do Energy-based Flow Classifier (EFC), para garantir a privacidade dos dados durante o processo de treinamento do modelo \cite{souza2022novel}.
 \item Uma avaliação abrangente da eficácia das técnicas de PPML implementadas em termos de preservação da privacidade, precisão dos modelos resultantes e desempenho computacional.
 \item Um relatório detalhado documentando as atividades realizadas, incluindo a revisão bibliográfica, a metodologia adotada, os resultados obtidos e as conclusões alcançadas.
 \item Uma apresentação clara e concisa dos principais aspectos do projeto, destacando os benefícios
@@ -72,8 +73,6 @@ e as implicações práticas das técnicas de PPML no contexto da preservação 
 \end{itemize}
 
 Espera-se que esses resultados contribuam para o avanço do conhecimento em PPML, forneçam insights valiosos sobre a preservação da privacidade em ambientes de aprendizado de máquina e incentivem a aplicação prática dessas técnicas em diferentes setores, garantindo a proteção dos dados pessoais dos indivíduos.
-
-
 
 \section{Plano de trabalho - Maria Eduarda Carvalho Santos | }
 \subsection{ Adequação, incluindo resumo, objetivos, Plano de Trabalho, problema de
@@ -87,16 +86,16 @@ pesquisa, Justificativa adequação plano-projeto-IC}
 \subsection{Metodologia para alcance dos objetivos, com recursos materiais e infrastrutura |}
 \subsection{Bibliografia}
 
-\section{Plano de trabalho - Ualiton  | }
+\section{Plano de trabalho - Ualiton Ventura da Silva  | }
 \subsection{ Adequação, incluindo resumo, objetivos, Plano de Trabalho, problema de
 pesquisa, Justificativa adequação plano-projeto-IC}
 \subsection{Metodologia para alcance dos objetivos, com recursos materiais e infrastrutura |}
 \subsection{Bibliografia}
 
-
-
 \section{Conclusão}
 Neste projeto de iniciação científica, propomos um estudo aprofundado sobre as técnicas de Privacy Preserving Machine Learning (PPML), com o objetivo de compreender seus fundamentos teóricos e aplicar essas técnicas em uma prova de conceito. A preservação da privacidade em ambientes de aprendizado de máquina é uma área de pesquisa em crescimento, e os resultados obtidos neste projeto contribuirão para o avanço do conhecimento nesse campo. Através da análise dos resultados e da disseminação dos conhecimentos adquiridos, esperamos promover a adoção de técnicas de PPML e melhorar a proteção da privacidade dos indivíduos em aplicações de aprendizado de máquina.
+
+
 
 \bibliographystyle{plainnat}
 \bibliography{references}   
